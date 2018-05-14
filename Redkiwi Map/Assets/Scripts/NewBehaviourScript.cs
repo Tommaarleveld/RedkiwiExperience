@@ -26,8 +26,15 @@ public class NewBehaviourScript : MonoBehaviour {
 		//Makes sure that the player moves
 		transform.Translate (direction*speed*Time.deltaTime);
 
-		//After the player moves call for function AnimateMovement
-		AnimateMovement (direction);
+		if (direction.x != 0 || direction.y != 0) {
+			//Animates the players movement
+			AnimateMovement (direction);
+		} 
+		else {
+			animator.SetLayerWeight (1, 0);
+		}
+
+
 	}
 
 	private void GetInput(){
@@ -49,6 +56,9 @@ public class NewBehaviourScript : MonoBehaviour {
 	}
 
 	public void AnimateMovement(Vector2 direction){
+		animator.SetLayerWeight (1, 1);
+
+		//Sets the animation paramater so that the player faces the correct direction
 		animator.SetFloat ("x", direction.x);
 		animator.SetFloat ("y", direction.y);
 	}
