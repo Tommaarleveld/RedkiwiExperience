@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 181920857}
   - component: {fileID: 181920858}
   - component: {fileID: 181920859}
+  - component: {fileID: 181920860}
   m_Layer: 0
   m_Name: brazilian_soccer_player_7
   m_TagString: Untagged
@@ -199,6 +200,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!95 &181920860
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181920856}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7fa2f4f71ea1f4ba4891a55041236ee2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &191020062
 GameObject:
   m_ObjectHideFlags: 0

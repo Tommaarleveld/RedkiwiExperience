@@ -7,11 +7,13 @@ public class NewBehaviourScript : MonoBehaviour {
 	[SerializeField]
 	private float speed;
 
+	private Animator animator;
+
 	private Vector2 direction;
 
 	// Use this for initialization
 	void Start () {
-		
+		animator = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -21,7 +23,11 @@ public class NewBehaviourScript : MonoBehaviour {
 	}
 
 	public void Move(){
+		//Makes sure that the player moves
 		transform.Translate (direction*speed*Time.deltaTime);
+
+		//After the player moves call for function AnimateMovement
+		AnimateMovement (direction);
 	}
 
 	private void GetInput(){
@@ -40,5 +46,10 @@ public class NewBehaviourScript : MonoBehaviour {
 		if (Input.GetKey (KeyCode.D)) {
 			direction += Vector2.right;
 		}
+	}
+
+	public void AnimateMovement(Vector2 direction){
+		animator.SetFloat ("x", direction.x);
+		animator.SetFloat ("y", direction.y);
 	}
 }
