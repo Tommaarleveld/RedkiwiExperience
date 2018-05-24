@@ -9,7 +9,7 @@ Our client is @Redkiwi-NL. They are looking for ways to find new long-term Devel
 * [x] Created Map & All Objects
 * [x] Player moves arround
 * [x] Player collides with objects
-* [] Player can interact with different people and objects
-* [] Player can apply for a job
-* [] Player can check the Redkiwi Hall Of fame
-* [] Player collides with objects
+* [ ] Player can interact with different people and objects
+* [ ] Player can apply for a job
+* [ ] Player can check the Redkiwi Hall Of fame
+* [ ] Player collides with objects
