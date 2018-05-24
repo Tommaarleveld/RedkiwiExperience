@@ -1,8 +1,8 @@
 # RedkiwiExperience
 
-This is a School Project made in Unity by: @Tommaarleveld, @Damianvstraten, @SamsonVE, @Olcay4, @rubenodeman & @Benno6194
+This is a School Project made in Unity by: [@Tommaarleveld](https://github.com/Tommaarleveld/), [@Damianvstraten](https://github.com/Damianvstraten/), [@SamsonVE](https://github.com/SamsonVE/), [@Olcay4](https://github.com/Olcay4/), [@rubenodeman](https://github.com/rubenodeman/) & [@Benno6194](https://github.com/Benno6194/)
 
-Our client is @Redkiwi-NL. They are looking for ways to find new long-term Developers. So we decided to build a game where you would become acquainted with the company.
+Our client is [@Redkiwi-NL](https://github.com/Redkiwi-NL/). They are looking for ways to find new long-term Developers. So we decided to build a game where you would become acquainted with the company.
 
 ## Roadmap
 
