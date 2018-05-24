@@ -12,4 +12,4 @@ Our client is [@Redkiwi-NL](https://github.com/Redkiwi-NL/). They are looking fo
 * [ ] Player can interact with different people and objects
 * [ ] Player can apply for a job
 * [ ] Player can check the Redkiwi Hall Of fame
-* [ ] Player collides with objects
+* [ ] Add quest to game (Gamification)
