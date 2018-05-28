@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour {
         player.gameObject.transform.position = playerController.getLastPlayerPostion();
 	}
 	
-	// Update is called once per frame
+	// Update is called once per frame  
 	void Update () {
 		
 	}
