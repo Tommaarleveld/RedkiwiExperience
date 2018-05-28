@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class switchScene : MonoBehaviour {
 
     private PlayerController playerController;
+    private Collider2D playerCollider, myCollider;
+    public GameObject player;
+    private string sceneName;
 
     // Change the Scene when called inside unity. This can also be attached to a specific object.
     public void ChangeScene(string sceneName)
@@ -16,6 +19,8 @@ public class switchScene : MonoBehaviour {
     // Use this for initialization
     void Start () {
         playerController = FindObjectOfType<PlayerController>();
+        playerCollider = player.GetComponent<Collider2D>();
+        myCollider = this.GetComponent<Collider2D>();
 	}
 	
 	// Update is called once per frame
@@ -24,6 +29,25 @@ public class switchScene : MonoBehaviour {
         {
             playerController.savePlayerPosition(); 
             SceneManager.LoadScene("introductionScene");
+        }
+
+        checkCollision();
+    }
+
+    public void checkCollision()
+    {
+        if (playerCollider.bounds.Intersects(myCollider.bounds))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (transform.childCount > 0)
+                {
+                    sceneName = transform.GetChild(0).name;
+
+                    playerController.savePlayerPosition();
+                    SceneManager.LoadScene(sceneName);
+                }
+            }      
         }
     }
 }
