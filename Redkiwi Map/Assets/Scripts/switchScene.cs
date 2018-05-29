@@ -46,18 +46,21 @@ public class switchScene : MonoBehaviour {
 
     public void checkCollision()
     {
-        if (playerCollider.bounds.Intersects(myCollider.bounds))
+        if (playerCollider != null)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (playerCollider.bounds.Intersects(myCollider.bounds))
             {
-                if (transform.childCount > 0)
+                if (Input.GetKeyDown(KeyCode.E))
                 {
-                    sceneName = transform.GetChild(0).name;
+                    if (transform.childCount > 0)
+                    {
+                        sceneName = transform.GetChild(0).name;
 
-                    playerController.savePlayerPosition();
-                    SceneManager.LoadScene(sceneName);
+                        playerController.savePlayerPosition();
+                        SceneManager.LoadScene(sceneName);
+                    }
                 }
-            }      
+            }
         }
     }
 }
