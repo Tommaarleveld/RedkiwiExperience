@@ -18,4 +18,9 @@ public class GameController : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void OnApplicationQuit()
+    {
+        playerController.savePlayerPosition();
+    }
 }

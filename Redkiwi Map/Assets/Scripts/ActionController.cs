@@ -16,8 +16,8 @@ public class ActionController : MonoBehaviour {
         vacancyCollider = vacany.GetComponent<Collider2D>();
 
         vacanyText = vacany.transform.GetChild(0).gameObject;
-        vacanyText.gameObject.GetComponent<MeshRenderer>().sortingLayerName = "Foreground";
-        vacanyText.gameObject.GetComponent<MeshRenderer>().sortingOrder = 50; 
+        vacanyText.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Foreground";
+        vacanyText.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 50; 
 	}
 	
 	// Update is called once per frame
