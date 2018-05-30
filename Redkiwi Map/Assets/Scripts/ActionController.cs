@@ -50,5 +50,6 @@ public class ActionController : MonoBehaviour {
     {
         pageEnabled = false;
         Application.OpenURL("https://www.redkiwi.nl/werken-bij-redkiwi/");    
+        ToDoList.task3 = true;
     }
 }

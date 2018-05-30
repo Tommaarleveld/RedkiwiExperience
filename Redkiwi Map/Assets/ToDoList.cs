@@ -7,7 +7,7 @@ public class ToDoList : MonoBehaviour {
 
     public static bool toDoListIsOpen = false;
 
-    public static bool task1 = true;
+    public static bool task1 = false;
     public static bool task2 = false;
     public static bool task3 = false;
 

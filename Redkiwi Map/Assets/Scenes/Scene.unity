@@ -653,7 +653,7 @@ Prefab:
     - target: {fileID: 224073732656607204, guid: 36dfa1aa4b5f54be3a361d5f8352a7f6,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -19
+      value: 17.1
       objectReference: {fileID: 0}
     - target: {fileID: 224658575655488688, guid: 36dfa1aa4b5f54be3a361d5f8352a7f6,
         type: 2}
@@ -719,6 +719,21 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114730768035633830, guid: 36dfa1aa4b5f54be3a361d5f8352a7f6,
+        type: 2}
+      propertyPath: m_Text
+      value: Praat met Moves
+      objectReference: {fileID: 0}
+    - target: {fileID: 224073732656607204, guid: 36dfa1aa4b5f54be3a361d5f8352a7f6,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 232.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114521497542211026, guid: 36dfa1aa4b5f54be3a361d5f8352a7f6,
+        type: 2}
+      propertyPath: m_Text
+      value: Solliciteer!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 36dfa1aa4b5f54be3a361d5f8352a7f6, type: 2}

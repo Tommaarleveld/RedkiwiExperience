@@ -66,6 +66,13 @@ public class switchScene : MonoBehaviour {
 
                         playerController.savePlayerPosition();
                         SceneManager.LoadScene(sceneName);
+
+                        if(sceneName == "PimInteractionScene"){
+                            ToDoList.task1 = true;
+                        }
+                        if(sceneName == "MovesInteractionScene"){
+                            ToDoList.task2 = true;
+                        }
                     }
                 }
             }
