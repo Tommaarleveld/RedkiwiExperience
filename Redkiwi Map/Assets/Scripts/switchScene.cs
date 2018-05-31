@@ -68,6 +68,7 @@ public class switchScene : MonoBehaviour {
                     if (transform.childCount > 0)
                     {
                         sceneName = transform.GetChild(1).name;
+                        Debug.Log(sceneName);
 
                         playerController.savePlayerPosition();
                         SceneManager.LoadScene(sceneName);
@@ -86,6 +87,7 @@ public class switchScene : MonoBehaviour {
                         {
                             ToDoList.task4 = true;
                         }
+                        
                     }
                 }
             }

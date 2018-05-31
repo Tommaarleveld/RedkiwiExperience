@@ -43,6 +43,7 @@ public class ActionController : MonoBehaviour {
             if (Input.GetKeyDown("e"))
             {
                 pageEnabled = true;
+                ToDoList.task5 = true;
             }
         }
         else

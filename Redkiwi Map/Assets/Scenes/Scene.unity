@@ -2080,6 +2080,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 70830086795274000, guid: 95f292118e8394d468d1407287d99c0c,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 70830086795274000, guid: 95f292118e8394d468d1407287d99c0c,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 70830086795274000, guid: 95f292118e8394d468d1407287d99c0c,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114424585342156424, guid: 95f292118e8394d468d1407287d99c0c,
+        type: 2}
+      propertyPath: speed
+      value: 3.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95f292118e8394d468d1407287d99c0c, type: 2}
   m_IsPrefabParent: 0
@@ -2099,8 +2119,8 @@ MonoBehaviour:
   toDoListTask1: {fileID: 984565385}
   toDoListTask2: {fileID: 1368353786}
   toDoListTask3: {fileID: 1324026390}
-  toDoListTask4: {fileID: 0}
-  toDoListTask5: {fileID: 0}
+  toDoListTask4: {fileID: 1178449940}
+  toDoListTask5: {fileID: 1501643290}
 --- !u!1 &797677373
 GameObject:
   m_ObjectHideFlags: 0
