@@ -919,7 +919,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Hey!
 
-    Ik ben Herman'
+    Ik ben Ivar'
 --- !u!222 &1016099964
 CanvasRenderer:
   m_ObjectHideFlags: 0

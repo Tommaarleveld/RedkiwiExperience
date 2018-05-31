@@ -17,7 +17,12 @@ public class ActionController : MonoBehaviour {
 
         vacanyText = vacany.transform.GetChild(0).gameObject;
         vacanyText.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Foreground";
-        vacanyText.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 50; 
+        vacanyText.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 50;
+
+        GameObject text = vacanyText.transform.GetChild(1).gameObject;
+
+        text.gameObject.GetComponent<MeshRenderer>().sortingLayerName = "Foreground";
+        text.gameObject.GetComponent<MeshRenderer>().sortingOrder = 60;
 	}
 	
 	// Update is called once per frame
@@ -50,6 +55,6 @@ public class ActionController : MonoBehaviour {
     {
         pageEnabled = false;
         Application.OpenURL("https://www.redkiwi.nl/werken-bij-redkiwi/");    
-        ToDoList.task3 = true;
+        ToDoList.task5 = true;
     }
 }

@@ -10,12 +10,16 @@ public class ToDoList : MonoBehaviour {
     public static bool task1 = false;
     public static bool task2 = false;
     public static bool task3 = false;
+    public static bool task4 = false;
+    public static bool task5 = false;
 
     public GameObject toDoListUI;
 
     public Toggle toDoListTask1;
     public Toggle toDoListTask2;
     public Toggle toDoListTask3;
+    public Toggle toDoListTask4;
+    public Toggle toDoListTask5;
 	
 	// Update is called once per frame
 	void Update () {
@@ -41,6 +45,14 @@ public class ToDoList : MonoBehaviour {
         }
         if(task3){
             toDoListTask3.isOn = true;
+        }
+        if (task4)
+        {
+            toDoListTask4.isOn = true;
+        }
+        if (task5)
+        {
+            toDoListTask5.isOn = true;
         }
     }
 

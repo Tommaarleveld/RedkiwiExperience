@@ -24,7 +24,12 @@ public class switchScene : MonoBehaviour {
         {
             child = this.transform.GetChild(0).gameObject;
             child.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Foreground";
-            child.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 50; 
+            child.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 50;
+
+            GameObject text = child.transform.GetChild(1).gameObject;
+
+            text.gameObject.GetComponent<MeshRenderer>().sortingLayerName = "Foreground";
+            text.gameObject.GetComponent<MeshRenderer>().sortingOrder = 60;
         }
     
         if (GameObject.Find("Player") != null)
@@ -72,6 +77,14 @@ public class switchScene : MonoBehaviour {
                         }
                         if(sceneName == "MovesInteractionScene"){
                             ToDoList.task2 = true;
+                        }
+                        if (sceneName == "WintersportInteractionScene")
+                        {
+                            ToDoList.task3 = true;
+                        }
+                        if (sceneName == "HOFInteractionScene")
+                        {
+                            ToDoList.task4 = true;
                         }
                     }
                 }
